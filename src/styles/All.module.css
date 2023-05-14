@@ -1,0 +1,25 @@
+.root {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.main {
+	margin-top: 8;
+	margin-bottom: 2;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+.page {
+	height: 90vh;
+	width: 100%;
+}
