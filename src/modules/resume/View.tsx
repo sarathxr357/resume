@@ -1,100 +1,134 @@
-import { Box, Typography } from "@mui/material";
-import styles from "@app/styles/All.module.css";
+import {
+	Box,
+	List,
+	ListItem,
+	ListItemText,
+	Paper,
+	Typography,
+} from "@mui/material";
 
 const ResumeView = () => {
 	return (
-		<Box className={styles.page}>
-			<h1>Jane Doe</h1>
-			<h2>1234 Technology Drive</h2>
-			<h2>Cyber City, USA 12345</h2>
-			<h2>(123) 456-7890</h2>
-			<h2>jane.doe@email.com</h2>
-			<br />
-			<h2>Objective:</h2>
-			<p>
-				To obtain a full stack developer position that leverages my
-				experience with both front-end and back-end technologies to build
-				and maintain high-quality web applications.
-			</p>
-			<br />
-			<h2>Summary:</h2>
-			<p>
-				Highly skilled and experienced full stack developer with 5 years of
-				experience in developing and implementing web applications. Strong
-				proficiency in various front-end technologies, including HTML, CSS,
-				and JavaScript, and back-end technologies, including Node.js, Ruby
-				on Rails, and PHP. Adept at working in Agile development
-				environments and collaborating with cross-functional teams to
-				deliver high-quality web applications.
-			</p>
-			<br />
-			<h2>Work Experience:</h2>
-			<h3>Full Stack Developer</h3>
-			<h4>XYZ Inc., Cyber City, USA</h4>
-			<h4>June 2018 - Present</h4>
-			<ul>
-				<li>
-					Worked with cross-functional teams to design, develop, and
-					implement web applications using HTML, CSS, JavaScript, Node.js,
-					and Ruby on Rails
-				</li>
-				<li>
-					Built reusable UI components using React.js and ensured
-					cross-browser compatibility using CSS frameworks such as
-					Bootstrap
-				</li>
-				<li>
-					Developed and maintained RESTful APIs to connect the front-end
-					with the back-end databases
-				</li>
-				<li>
-					Implemented security measures, such as user authentication and
-					authorization, to ensure the protection of sensitive data
-				</li>
-			</ul>
-			<h3>Web Developer</h3>
-			<h4>123Web Solutions, Cyber City, USA</h4>
-			<h4>January 2016 - June 2018</h4>
-			<ul>
-				<li>
-					Designed and developed web pages using HTML, CSS, and JavaScript
-					and integrated them with back-end systems using PHP and MySQL
-				</li>
-				<li>
-					Collaborated with designers to ensure the accurate implementation
-					of designs into functional web pages
-				</li>
-				<li>
-					Developed and maintained e-commerce websites, including the
-					implementation of payment gateway integration and shipping
-					calculation systems
-				</li>
-				<li>
-					Troubleshot and resolved technical issues to ensure the smooth
-					operation of web applications
-				</li>
-			</ul>
-			<br />
-			<h2>Education:</h2>
-			<h3>Bachelor of Science in Computer Science</h3>
-			<h4>University of Technology, Cyber City, USA</h4>
-			<h4>September 2011 - June 2015</h4>
-			<br />
-			<h2>Skills:</h2>
-			<ul>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>JavaScript</li>
-				<li>React.js</li>
-				<li>Node.js</li>
-				<li>Ruby on Rails</li>
-				<li>RESTful API development</li>
-				<li>Agile development</li>
-				<li>Git</li>
-				<li>Cross-browser compatibility</li>
-				<li>User authentication and authorization</li>
-			</ul>
-		</Box>
+		<Paper sx={{ py: 3 }}>
+			<header style={{ marginLeft: 15, marginRight: 15, borderRadius: 5 }}>
+				<h1>Sarath K.S.</h1>
+				<p>Software Developer | Thrissur</p>
+				<p>Email: sarathxr@gmail.com | Phone: (+91) 80757-25639</p>
+			</header>
+			<main>
+				<section className="section">
+					<h2 className="section-title">Summary</h2>
+					<p className="section-content">
+						I am a computer engineering graduate from MTI Thrissur with a
+						strong background in web development. Three years of
+						experience in HTML, JavaScript, and CSS. One and a half years
+						of experience in React.js, Nest.js, and Next.js. Strong
+						understanding of software development principles,
+						problem-solving skills, and working with APIs and third-party
+						libraries.
+					</p>
+				</section>
+				<section className="section">
+					<h2 className="section-title">Education</h2>
+					<div className="section-content">
+						<div className="education-item">
+							<h3 className="item-title">
+								Diploma in Computer Engineering
+							</h3>
+							{/* //@ts-ignore */}
+							<p>Maharaja's Technological Institute, Thrissur</p>
+							<p>2016-2019</p>
+						</div>
+						{/* Add more education items if applicable */}
+					</div>
+				</section>
+				<section className="section">
+					<h2 className="section-title">Experience</h2>
+					<div className="section-content">
+						<div className="experience-item">
+							<h3 className="item-title">Software Developer</h3>
+							<p>Codiac Technologies, Chalakudy</p>
+							<p>2022 Feb - Present</p>
+							<h3 className="item-title">Programmer</h3>
+							<p>Dukesoft, Thrissur</p>
+							<p>2019 May - 2021 Sept</p>
+							{/* <ul> */}
+							{/* <li>Responsibility or Achievement</li> */}
+							{/* <li>Responsibility or Achievement</li> */}
+							{/* Add more responsibilities or achievements if applicable */}
+							{/* </ul> */}
+						</div>
+						{/* Add more experience items if applicable */}
+					</div>
+				</section>
+				<section className="section">
+					<h2 className="section-title">Skills</h2>
+					<h4 className="section-content">
+						Skills in Next.js (Frontend):
+					</h4>
+					<ul>
+						<li>
+							Proficient in JavaScript and TypeScript, which are
+							essential for Next.js and Nest.js development.
+						</li>
+						<li>
+							Solid understanding of React.js concepts for building
+							components, managing state, and utilizing lifecycle
+							methods.
+						</li>
+						<li>
+							Familiarity with Next.js fundamentals such as routing,
+							server-side rendering (SSR), static site generation (SSG),
+							and API routes.
+						</li>
+						<li>
+							Proficiency in CSS and styling frameworks like CSS modules,
+							CSS-in-JS libraries, and preprocessors.
+						</li>
+						<li>
+							Strong understanding of HTML structure and DOM
+							manipulation.
+						</li>
+						<li>
+							Knowledge of Git and version control for collaborative
+							development.
+						</li>
+					</ul>
+					<h4 className="section-content">Skills in Nest.js (Backend):</h4>
+					<ul>
+						<li>
+							Strong proficiency in Node.js and familiarity with
+							event-driven programming and asynchronous concepts.
+						</li>
+						<li>
+							Solid understanding of TypeScript features, such as
+							decorators and strong typing.
+						</li>
+						<li>
+							Knowledge of building RESTful and GraphQL APIs using
+							Nest.js and integrating them with frontend applications.
+						</li>
+						<li>
+							Experience with databases like MongoDB, PostgreSQL, or
+							MySQL and ORM libraries like TypeORM or Sequelize.
+						</li>
+						<li>
+							Understanding of authentication and authorization
+							mechanisms for securing web applications.
+						</li>
+						<li>
+							Knowledge of testing frameworks like Jest for unit,
+							integration, and end-to-end tests.
+						</li>
+						<li>
+							Familiarity with deployment, DevOps practices,
+							containerization (e.g., Docker), and cloud platforms (e.g.,
+							AWS, Azure, Google Cloud).
+						</li>
+					</ul>
+				</section>
+			</main>
+		</Paper>
 	);
 };
 
