@@ -35,8 +35,7 @@ const ResumeView = () => {
 							<h3 className="item-title">
 								Diploma in Computer Engineering
 							</h3>
-							{/* //@ts-ignore */}
-							<p>Maharaja's Technological Institute, Thrissur</p>
+							<p>{"Maharaja's Technological Institute, Thrissur"}</p>
 							<p>2016-2019</p>
 						</div>
 						{/* Add more education items if applicable */}
